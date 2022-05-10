@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual de HTML y CSS</title>
+    <link rel="stylesheet" type="text/css" href="./F22-1-10-Enlaces_html.css">
+    <style>
+        body{
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="" alt="">
+            <h1 class="title">Enlaces HTML</h1>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="">Inicio</a></li>
+                <li class="desplegable"><a href="">CSS3</a>
+                    <ul>
+                        <li><a href="">a</a></li>
+                        <li><a href="">b</a></li>
+                        <li><a href="">c</a></li>
+                    </ul>
+                </li>
+                <li class="desplegable"><a href="">HTML5</a>
+                    <ul>
+                        <li><a href="">a</a></li>
+                        <li><a href="">b</a></li>
+                        <li><a href="">c</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <header>
+                <h2 class="subtitle">¿Qué son los enlaces?</h2>
+                <p class="text">Los enlaces HTML son hipervínculos. Permiten a los usuarios hacer clic para pasar de una página a otra, saltar a otro documento. Los enlaces están en casi todas las páginas web.</p>
+            </header>
+            <section>
+                <h3 class="subtitle">Sintaxis empleada en las etiquetas de enlace</h3>
+                <p class="text">La etiqueta a HTML define un hipervínculo. Tiene la siguiente sintaxis: a href=" url"> link text<br>
+                    El atributo más importante del elemento a es el href, que indica el destino del enlace.<br>
+                    El texto del enlace es la parte que será visible para el lector.<br>
+                    Al hacer clic en el texto del enlace, se enviará al lector a la dirección URL especificada:<br>
+                    a href="https://www.w3schools.com/">Visit W3Schools.com! a</p>
+                <figure>
+                    <figcaption>Enlaces en HTML</figcaption>
+                    <img src="./índice.jpg" alt="enlaces en html">
+                </figure>
+                    <h3 class="subtitle">Enlaces HTML, el atributo de destino</h3>
+                    <p class="text">De forma predeterminada, la página vinculada se mostrará en la ventana actual del navegador. Para cambiar esto, debe especificar otro destino para el vínculo.<br>
+
+                        El targetatributo especifica dónde abrir el documento vinculado.</p>
+                    <dl class="text">
+                        <dt>_self</dt>
+                        <dd>Abre el documento en la misma ventana donde se hizo clic.</dd>
+                        <dt>_blank</dt>
+                        <dd>Abre el documento en una nueva ventana.</dd>
+                        <dt>_parent</dt>
+                        <dd>Abre el documento en el marco principal.</dd>
+                        <dt>_top</dt>
+                        <dd>Abre el documento en el cuerpo completo de la ventana.</dd>
+                    </dl>
+    
+                
+            </section>
+        </article>
+    </main>
+    <footer>
+        <p class="text">Pie de página</p>
+    </footer>
+</body>
+
+</html>

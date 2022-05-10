@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual de HTML y CSS</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="" alt="">
+            <h1>Aprende HTML</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="">Inicio</a></li>
+                <li><a href="">CSS3</a>
+                    <ul>
+                        <li><a href="">a</a></li>
+                        <li><a href="">b</a></li>
+                        <li><a href="">c</a></li>
+                    </ul>
+                </li>
+                <li><a href="">HTML5</a>
+                    <ul>
+                        <li><a href="">a</a></li>
+                        <li><a href="">b</a></li>
+                        <li><a href="">c</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <header>
+                <h2>Formularios HTML</h2>
+                <p>Descripción de lo que es un formulario</p>
+            </header>
+            <section>
+                <h3>Tipos de formularios</h3>
+                <p>Un formulario es un conjunto de controles (botones, cajas de texto, casillas de verificación, botones radio, etc) que permiten al usuario introducir datos y enviarlos al servidor web para su procesamiento.</p>
+                <figure>
+                    <figcaption>Ejemplo código de formulario en HTML</figcaption>
+                    <img src="imagenes\ejemplo1.jpg" alt="descripcion de un codigo html para un formulario">
+                    <figcaption>Resultado del formulario</figcaption>
+                    <img src="imagenes\ejemplo2.jpg" alt="formulario">
+                </figure>
+                <p>
+                    La etiqueta que delimita un formulario es la etiqueta &lt;form&gt; ...&lt;/form&gt;. Los atributos más importantes de la etiqueta &lt;form&gt; son:
+
+                    action: contiene el nombre del agente que procesará los datos remitidos al servidor (por ejemplo, un script de PHP)
+                    method: define la manera de enviar los datos al servidor. Los valores posibles son:
+                    get: los valores enviados se añaden a la dirección indicada en el atributo action
+                    post: los valores se envían de forma separada
+                    Si el atributo method no está establecido, el formulario se comporta como si el valor fuera get.
+
+                    La etiqueta &lt;form&gt; es un elemento de bloque. En su interior puede haber cualquier elemento típico de una página web (párrafos, imágenes, divisiones, listas, tablas, etc.), además de las etiquetas que crean los controles.
+
+                    Los etiquetas que crean los controles en los formularios son &lt;input&gt;, &lt;button&gt;, &lt;select&gt;, &lt;optgroup&gt;, &lt;option&gt; y &lt;textarea&gt;. Además, se pueden estructurar los controles con las etiquetas &lt;fieldset&gt y &lt;legend&gt;. Por último, la etiqueta &lt;label&gt; permite mejorar la accesibilidad de los controles.
+
+                    El navegador envía únicamente los datos de los controles contenidos en el formulario. En una misma página puede haber varios formularios que envíen datos al mismo o a diferentes agentes.
+                </p>
+                <aside>
+                    <h3>Título del aside</h3>
+                    <ul>
+                        <li><a href="">1</a></li>
+                        <li><a href="">2</a></li>
+                        <li><a href="">3</a></li>
+                    </ul>
+                    <blockquote>Citas al artículo</blockquote>
+                </aside>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <p>Pie de página</p>
+    </footer>
+</body>
+
+</html>

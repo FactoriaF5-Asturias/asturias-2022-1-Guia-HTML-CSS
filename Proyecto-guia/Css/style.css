@@ -1,0 +1,175 @@
+html {
+
+    --black: #000000;
+    --white: #FFFFFF;
+    --green: #9DAB57;
+    --dark-green: #385C5B;
+
+
+    --title-font: 'IBM Plex Sans Thai Looped',
+        sans-serif;
+    --title-size: 40pt;
+
+    --subtitle: 'IBM Plex Sans Thai Looped',
+        sans-serif;
+    --subtitle-size: 20pt;
+
+    --text-font: 'Merriweather',
+        serif;
+    --text-size: 14pt;
+
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    font-family: var(--title-font);
+    font-size: var(--title-size);
+}
+
+.subtitle {
+    font-family: var(--subtitle-font);
+    font-size: var(--subtitle-size);
+    text-align: center;
+}
+
+.text {
+    font-family: var(--text-font);
+    font-size: var(--text-size);
+    text-align: center;
+}
+
+.naveg {
+    display: flex;
+    justify-content: center;
+}
+
+.naveg img {
+    width: 7%;
+    max-width: 100vw;
+}
+
+
+
+nav {
+    background-color: var(--dark-green);
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    border-radius: 5px
+}
+
+.nav_ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav_ul a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.nav_button {
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0 20px;
+    border-radius: 10px;
+}
+
+.nav_button:hover {
+    background: var(--green);
+}
+
+.nav_button:hover>ul {
+    display: block;
+    list-style: none;
+}
+
+.nav_button>a {
+    color: var(--white);
+}
+
+.nav_submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--dark-green);
+    font: var(--text-font);
+    padding: 10px 0;
+    border-radius: 2px;
+}
+
+.nav_submenu li {
+    float: none;
+    width: 150px;
+}
+
+.nav_submenu a {
+    line-height: 120%;
+    padding: 10px 15px;
+}
+
+.nav_submenu a:hover {
+    background: var(--green);
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1em;
+}
+
+
+
+footer {
+    background-color: var(--dark-green);
+    padding-top: 3rem;
+    margin-top: 4rem;
+}
+
+.container1 {
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+
+s
+
+.navigation1 {
+    display: flex;
+        align-items: center
+}
+
+.navigation1 :hover {
+    background-color: var(--green);
+    border-radius: 0.5rem;
+    padding: 10px;
+}
+
+.navigation1 a {
+    color: var(--white);
+    font-family: Helvetica;
+    font-size: 1rem;
+    text-decoration: none;
+    margin: 5rem;
+}
+
+
+.bottom {
+    text-align: center;
+    font-size: 1rem;
+    color: var(--white);
+    margin-bottom: 1rem;
+}

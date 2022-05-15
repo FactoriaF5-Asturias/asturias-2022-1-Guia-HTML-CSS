@@ -6,44 +6,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manual de HTML y CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/Css/style.css">
 </head>
 
 <body>
-    <header>
-        <div>
-            <h1>Aprende CSS</h1>
+    <header class="">
+        <div class="naveg">
+            <img src="logodicc.png" alt="logodicc">
+            <h1 class="title">Aprende HTML</h1>
         </div>
         <nav>
-            <ul>
-                <li><a href="">Inicio</a></li>
-                <li><a href="">CSS3</a>
-                    <ul>
-                        <li><a href="">a</a></li>
-                        <li><a href="">b</a></li>
-                        <li><a href="">c</a></li>
+            <ul class="nav_ul">
+                <li class="nav_button"><a href="">Inicio</a></li>
+                <li class="nav_button"><a href="">CSS3</a>
+                    <ul class="nav_submenu">
+                        <li><a href="#">Submenu</a></li>
+                        <li><a href="#">Submenu</a></li>
+                        <li><a href="#">Submenu</a></li>
                     </ul>
                 </li>
-                <li><a href="">HTML5</a>
-                    <ul>
-                        <li><a href="">a</a></li>
-                        <li><a href="">b</a></li>
-                        <li><a href="">c</a></li>
+                <li class="nav_button"><a href="#">HTML5</a>
+                    <ul class="nav_submenu">
+                        <li><a href="">Submenu</a></li>
+                        <li><a href="">Submenu</a></li>
+                        <li><a href="">Submenu</a></li>
                     </ul>
                 </li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="container">
         <article>
             <header class="flex-box">
-                <h2>Flex-Box</h2>
-                <p>Guia para entender un poco de Display Flex</p>
+                <h2 class="subtitle">Flex-Box</h2>
+                <p class="text">Guia para entender un poco de Display Flex</p>
             </header>
 
             <section class="What-is">
-                <h3>¿Qué es Flex-Box?</h3>
-                <p>Flexbox es un módulo de diseño de CSS3 que se creó para mejorar la forma en la que se hace diseño
+                <h3 class="subtitle">¿Qué es Flex-Box?</h3>
+                <p class="text">Flexbox es un módulo de diseño de CSS3 que se creó para mejorar la forma en la que se hace diseño
                     responsive,
                     evitando
                     así el uso de float, escribiendo menos código y facilitando el posicionamiento de elementos, incluso
@@ -56,8 +66,8 @@
             </section>
 
             <section class="structure">
-                <h3>Estrctura</h3>
-                <p>La estructura de Flexbox se compone de contenedores padre e hijos (Contenedor-Flex y Elementos-Flex
+                <h3 class="subtitle">Estrctura</h3>
+                <p class="text">La estructura de Flexbox se compone de contenedores padre e hijos (Contenedor-Flex y Elementos-Flex
                     respectivamente)</p>
                 <img src="" alt="">
                 <dl>
@@ -71,7 +81,7 @@
                 </dl>
 
                 <section class="desing-flex">
-                    <p>Cada diseño flex esta compuesto por dos ejes</p>
+                    <p class="text">Cada diseño flex esta compuesto por dos ejes</p>
 
                     <dl>
                         <dt>Eje principal</dt>
@@ -82,7 +92,7 @@
                 </section>
 
                 <section class="cont-flex">
-                    <p>El Contendor-Flex contiene direcciones que definen el origen y el fin del flujo de
+                    <p class="text">El Contendor-Flex contiene direcciones que definen el origen y el fin del flujo de
                         Elementos-Flex:</p>
 
                         <div>
@@ -96,31 +106,31 @@
                         </div>
                    
                     <br>
-                    <P>Cada Elemento-Flex está definido por sus dimensiones, anchura(tamaño principal) y altura(tamaño
+                    <P class="text">Cada Elemento-Flex está definido por sus dimensiones, anchura(tamaño principal) y altura(tamaño
                         secundario) que dependen
                         del eje principal y el eje secundario.</P>
                 </section>
 
                 <section class="properties">
-                    <h3>Propiedades</h3>
+                    <h3 class="subtitle">Propiedades</h3>
 
                     <div>
-                        <p>i queremos utilizar las propiedades de Flexbox tendremos que definirlo mediante la propiedad
+                        <p class="text">i queremos utilizar las propiedades de Flexbox tendremos que definirlo mediante la propiedad
                             display y su valor flex o inline-flex dentro del selector que nosotros definamos que es
                             nuestro elemento padre o Contenedor-Flex.</p>
 
                         <img src="" alt="">
 
-                        <p>n este artículo solo daremos un pantallazo de las principales propiedades del elemento padre
+                        <p class="text">n este artículo solo daremos un pantallazo de las principales propiedades del elemento padre
                             con una breve descripción en cada una.</p>
                     </div>
                 </section>
 
                 <section class="flex-direction">
-                    <h3>Flex-direction</h3>
+                    <h3 class="subtitle">Flex-direction</h3>
 
                     <div>
-                        <p>Es la encargada de definir el eje principal y secundario de nuestros elementos hijos. Estos
+                        <p class="text">Es la encargada de definir el eje principal y secundario de nuestros elementos hijos. Estos
                             ejes como ya se mencionó pueden se verticales, formando columnas y horizontales formando
                             filas.</p>
 
@@ -134,9 +144,9 @@
                 </section>
 
                 <section class="flex-wrap">
-                    <h3>Flex-wrap</h3>
+                    <h3 class="subtitle">Flex-wrap</h3>
                     <div>
-                        <p>Por defecto flex, trata de disponer de los elementos en una misma línea, si no es el caso que
+                        <p class="text">Por defecto flex, trata de disponer de los elementos en una misma línea, si no es el caso que
                             necesitás, con
                             flex-wrap podés ordenar los elementos en mas de una fila o columna.</p>
 
@@ -148,9 +158,9 @@
 
                 <section class="justify-content">
 
-                    <h3>Justify-content</h3>
+                    <h3 class="subtitle">Justify-content</h3>
                     <div>
-                        <p>Cuando nombramos el eje principal de un elemento padre, es decir el eje horizontal, se
+                        <p class="text">Cuando nombramos el eje principal de un elemento padre, es decir el eje horizontal, se
                             destaca esta propiedad para dar
                             direccionamiento a los elementos hijos.</p>
 
@@ -161,9 +171,9 @@
                 </section>
                 <section class="align-items">
 
-                    <h3>Align-items</h3>
+                    <h3 class="subtitle">Align-items</h3>
                     <div>
-                        <p>Cuando nombramos el eje principal de un elemento padre, es decir el eje horizontal, se
+                        <p class="text">Cuando nombramos el eje principal de un elemento padre, es decir el eje horizontal, se
                             destaca esta propiedad
                             para dar
                             direccionamiento a los elementos hijos.</p>
@@ -176,14 +186,14 @@
             </section>
 
             <section>
-                <p>Para finalizar hay que remarcar que dichas propiedades se pueden combinar unas con otras, definir contenedores padres
+                <p class="text">Para finalizar hay que remarcar que dichas propiedades se pueden combinar unas con otras, definir contenedores padres
                 con elementos hijos a los cuales también pueden definirse como padres que contienen hijos y así sucesivamente. Es por
                 ello que Flexbox nos da un sin fin de posibilidades para crear disposiciones para los componentes de nuestras páginas
                 web, de una manera sencilla y muy fácil de aprender.</p>
 
                 <br>
 
-                <p>Muchas gracias por leer este post. Hasta la próxima!</p>
+                <p class="text">Muchas gracias por leer este post. Hasta la próxima!</p>
 
             </section>
             
@@ -197,7 +207,17 @@
 
     </main>
     <footer>
-        <p>Pie de página</p>
+        <div class="container1">
+            <div class="menu">
+                <nav class="navigation1">
+                    <a href="Home.html">Home</a>
+                    <a href="CSS3.html">Css3</a>
+                    <a href="HTML5.html">Html5</a>
+                </nav>
+    
+            </div>
+        </div>
+        <h6 class="bottom">todos los derechos reservados por los estudiantes de Factoria F5</h6>
     </footer>
 </body>
 
